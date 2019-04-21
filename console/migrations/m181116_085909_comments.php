@@ -14,12 +14,15 @@ class m181116_085909_comments extends Migration
 
         $this->createTable('{{%comments}}', [
             'id' => $this->primaryKey(),
-			'text'=>$this->text()->notNull(),
-			'name' => $this->string()->notNull(),
-			'email' => $this->string()->notNull(),
-			'site' => $this->string()->notNull(),
-			'user_id' => $this->integer()->notNull(),
-			'parent_id' => $this->integer()->notNull(),
+			'text'=>$this->text()->Null(),
+			'name' => $this->string()->Null(),
+			'email' => $this->string()->Null(),
+			'site' => $this->string()->Null(),
+			'parent_id' => $this->integer()->Null(),
+			'user_id'=>$this->integer()->Null(),
+			'created_at' => $this->integer()->Null(),
+            'updated_at' => $this->integer()->Null(),
+			'id_comments' => $this->integer()->Null(),
         ], $tableOptions);
     }
 
